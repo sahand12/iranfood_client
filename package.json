@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "Iran food client react app",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "format": "onchange 'src/**/*.{js,jsx}' -- prettier --write {{changed}}"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "onchange": "^4.0.0",
+    "prettier": "1.13.7",
+    "webpack": "^4.16.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1"
+  }
+}
