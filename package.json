@@ -5,6 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
     "start:dev": "webpack-dev-server",
     "format": "onchange 'src/**/*.{js,jsx}' -- prettier --write {{changed}}"
   },
@@ -39,8 +41,10 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "ramda": "^0.25.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
     "react-router-dom": "^4.3.1"
   }
 }
