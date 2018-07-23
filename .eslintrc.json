@@ -1,5 +1,24 @@
 {
+  "root": true,
   "extends": [
-    "plugin:prettier/recommended"
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:flowtype/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "eslint-plugin-flowtype"
   ]
 }
