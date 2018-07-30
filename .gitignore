@@ -3,6 +3,7 @@ node_modules
 build/
 coverage/
 flow-coverage/
+*.scss.flow
 .module-cache
 *.log*
 *.sublime-project

@@ -1,5 +1,6 @@
 {
   "presets": [
+    "flow",
     "react",
     ["env", {
       "targets": {
@@ -7,11 +8,19 @@
       },
       "loose": true,
       "modules": false
-    }],
-    "flow"
+    }]
   ],
   "plugins": [
-    "react-hot-loader/babel",
-    "babel-plugin-transform-class-properties"
-  ]
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "syntax-dynamic-import"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "react-hot-loader/babel",
+        "transform-react-jsx-source"
+      ]
+    }
+  }
 }

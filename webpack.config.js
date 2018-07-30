@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
 const config = {
@@ -27,8 +27,8 @@ const config = {
         loader: 'babel-loader',
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
@@ -39,7 +39,7 @@ const config = {
     port: 4000,
     hot: true,
     publicPath: '/dist/', // Recommended to be the same as `output.publicPath`
-    contentBase: path.resolve(__dirname, 'dist'),
+    contentBase: [path.resolve(__dirname, 'public'), path.resolve(__dirname, 'dist')],
     watchContentBase: true,
     historyApiFallback: true,
     inline: true,

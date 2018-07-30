@@ -1,7 +1,13 @@
 // @flow
 import React from 'react';
-import {hot} from 'react-hot-loader';
+import {Route} from 'react-router-dom';
+import {HomePage} from './pages/public/home';
+import './App.scss';
 
-const App = () => <div>Hello Sahjand!</div>;
+const App = () => (
+  <div className='fb-app'>
+    <Route exact path='/' component={HomePage}/>
+  </div>
+);
 
-export default hot(module)(App);
+export default App;
