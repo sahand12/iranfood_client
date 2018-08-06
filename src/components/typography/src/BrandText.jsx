@@ -1,20 +1,17 @@
 // @flow
 import * as React from 'react';
 import Text from './Text';
+import FontFamilies from './styles/FontFamilies';
 
-function NavItemText (props: {children: React.Node}) {
+function BrandText (props: {children: React.Node}) {
   const {children, ...rest} = props;
   return (
     <Text
-      color='inherit'
-      style={{
-        fontWeight: 900,
-        fontSize: '14px',
-      }}
+      fontFamily={FontFamilies.brand}
       {...rest}
     >
       {children}
     </Text>
   );
 }
-export default NavItemText;
+export default BrandText;

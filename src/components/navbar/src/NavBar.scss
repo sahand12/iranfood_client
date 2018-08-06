@@ -1,0 +1,67 @@
+@import '../../../css/vars';
+.fb-navbar {
+  position: relative;
+  padding: 0 20px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $header_border_bottom_color;
+}
+.fb-navbar--noBorder {
+  border: none;
+}
+.fb-navbar__list {
+  display: flex;
+  justify-content: flex-start;
+}
+.fb-navbar__list__item {
+  display: flex;
+  align-items: center;
+}
+.fb-navbar__list__item__link {
+  color: inherit;
+  display: block;
+  padding: 10px 15px;
+}
+
+.fb-navbar__list__item__link--inverted {
+  color: white;
+  background-color: black;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.fb-navbar__menuIcon {
+  padding: 8px;
+  border: 1px solid #e7e7e7;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.fb-navbar__menuList {
+  z-index: 10;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e7e7e7;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 100%;
+}
+.fb-navbar__menuList__item {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.fb-navbar__menuList__item__link {
+  display: block;
+  padding: 5px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: $tablet_breakpoint) {
+
+}
